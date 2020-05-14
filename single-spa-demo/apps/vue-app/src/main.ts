@@ -11,8 +11,8 @@ const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
     render: (h: any) => h(App),
-    router
-  }
+    router,
+  },
 });
 
 export const bootstrap = vueLifecycles.bootstrap;
