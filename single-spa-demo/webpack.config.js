@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (webpackConfigEnv) => {
   const defaultConfig = singleSpaDefaults({
-    orgName: "",
+    orgName: "thomas",
     projectName: "root-config",
     webpackConfigEnv,
   });

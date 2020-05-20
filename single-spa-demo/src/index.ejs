@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SSA Root Config</title>
+  <title>Root Config</title>
   <!-- 
     This CSP allows any SSL-enabled host, but you should limit these directives further to increase your app's security.
     Learn more about CSP policies at https://content-security-policy.com/#directive
@@ -17,8 +17,8 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@/root-config": "//localhost:9000/-root-config.js",
-        "@/": "//localhost:8500/-.js"
+        "@thomas/root-config": "//localhost:9000/thomas-root-config.js",
+        "single-spa": "https://cdnjs.cloudflare.com/ajax/libs/single-spa/5.5.1/umd/single-spa.min.js"
       }
     }
   </script>
@@ -35,7 +35,7 @@
 </head>
 <body>
   <script>
-    System.import('@/root-config');
+    System.import('@thomas/root-config');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
