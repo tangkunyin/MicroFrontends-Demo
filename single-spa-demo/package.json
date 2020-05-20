@@ -1,6 +1,10 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "start:c": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "start:r": "cd ./apps/react-app/ && webpack-dev-server --mode=development --port 9001",
+    "start:v": "cd ./apps/vue-app/ && vue-cli-service serve --port 9002",
+    "start:s": "cd ./apps/svelte-app/ && sirv public --cors --port 9003",
+    "start:all": "concurrently --kill-others --kill-others-on-fail -p name --names \"config,react,vue,svelte\" \"npm run start:c\" \"npm run start:r\" \"npm run start:v\" \"npm run start:s\"",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "jest",
     "format": "prettier --write './**'",
@@ -38,7 +42,22 @@
     "@babel/preset-typescript": "^7.9.0",
     "eslint-config-ts-react-important-stuff": "^2.0.0",
     "typescript": "^3.8.3",
-    "webpack-config-single-spa-ts": "^1.4.2"
+    "webpack-config-single-spa-ts": "^1.4.2",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-plugin-typescript": "~4.3.0",
+    "@vue/cli-plugin-vuex": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-cli-plugin-single-spa": "~1.1.0",
+    "vue-template-compiler": "^2.6.11",
+    "sirv-cli": "^0.4.4"
   },
   "dependencies": {
     "single-spa": "^5.3.1",
