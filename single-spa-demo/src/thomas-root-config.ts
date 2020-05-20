@@ -12,6 +12,12 @@ registerApplication({
   activeWhen: "/vue",
 });
 
+registerApplication({
+  name: "svelte-app",
+  app: () => System.import("@thomas/svelte-app"),
+  activeWhen: "/svelte",
+});
+
 start({
   urlRerouteOnly: true,
 });
