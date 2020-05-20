@@ -12,13 +12,14 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
   <!-- Add your organization's prod import map URL to this script's src  -->
-  <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
+  <script type="systemjs-importmap" src="/importmap.json"></script>
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
         "@thomas/root-config": "//localhost:9000/thomas-root-config.js",
-        "single-spa": "https://cdnjs.cloudflare.com/ajax/libs/single-spa/5.5.1/umd/single-spa.min.js"
+        "@thomas/react-app": "//localhost:9001/thomas-react-app.js",
+        "@thomas/vue-app": "//localhost:9002/main.js"
       }
     }
   </script>

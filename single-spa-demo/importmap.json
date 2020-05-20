@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "single-spa": "https://cdnjs.cloudflare.com/ajax/libs/single-spa/5.5.1/umd/single-spa.min.js",
+    "react": "https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js",
+    "react-dom": "https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js",
+    "vue": "https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"
+  }
+}
