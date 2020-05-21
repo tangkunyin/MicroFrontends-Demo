@@ -2,11 +2,11 @@ import singleSpaSvelte from "single-spa-svelte";
 import SvelteApp from "./main";
 
 const svelteLifecycles = singleSpaSvelte({
-  component: SvelteApp,
-  domElementGetter: () => document.getElementById("svelte-app"),
-  props: {
-    someData: "data",
+  component: function () {
+    return SvelteApp;
   },
+  domElementGetter: () => document.getElementById("svelte-app"),
+  props: {},
 });
 
 export const bootstrap = svelteLifecycles.bootstrap;

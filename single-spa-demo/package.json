@@ -3,7 +3,7 @@
     "start-config": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
     "start-react": "cd ./apps/react-app/ && webpack-dev-server --mode=development --port 9001",
     "start-vue": "cd ./apps/vue-app/ && vue-cli-service serve --port 9002",
-    "start-svelte": "cd ./apps/svelte-app/ && sirv public --cors --port 9003",
+    "start-svelte": "cd ./apps/svelte-app/ && rollup -c -w",
     "start:all": "concurrently --kill-others --kill-others-on-fail -p name --names \"config,react,vue,svelte\" \"npm run start-*\"",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "jest",
@@ -57,7 +57,12 @@
     "less-loader": "^5.0.0",
     "vue-cli-plugin-single-spa": "~1.1.0",
     "vue-template-compiler": "^2.6.11",
-    "sirv-cli": "^0.4.4"
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2"
   },
   "dependencies": {
     "single-spa": "^5.3.1",
