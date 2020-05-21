@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "start:c": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
-    "start:r": "cd ./apps/react-app/ && webpack-dev-server --mode=development --port 9001",
-    "start:v": "cd ./apps/vue-app/ && vue-cli-service serve --port 9002",
-    "start:s": "cd ./apps/svelte-app/ && sirv public --cors --port 9003",
-    "start:all": "concurrently --kill-others --kill-others-on-fail -p name --names \"config,react,vue,svelte\" \"npm run start:c\" \"npm run start:r\" \"npm run start:v\" \"npm run start:s\"",
+    "start-config": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "start-react": "cd ./apps/react-app/ && webpack-dev-server --mode=development --port 9001",
+    "start-vue": "cd ./apps/vue-app/ && vue-cli-service serve --port 9002",
+    "start-svelte": "cd ./apps/svelte-app/ && sirv public --cors --port 9003",
+    "start:all": "concurrently --kill-others --kill-others-on-fail -p name --names \"config,react,vue,svelte\" \"npm run start-*\"",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "jest",
     "format": "prettier --write './**'",
