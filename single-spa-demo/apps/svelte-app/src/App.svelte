@@ -3,8 +3,7 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Svelte {name}</h1>
 </main>
 
 <style>
@@ -12,12 +11,17 @@
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
+		height: calc(100% - 2em);
 		margin: 0 auto;
+		background-color: antiquewhite;
+		display: flex;
+		align-items: center;
+		justify-content: center
 	}
 
 	h1 {
 		color: #ff3e00;
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 		font-size: 4em;
 		font-weight: 100;
 	}
