@@ -7,8 +7,10 @@ import About from "./pages/About.vue";
 
 Vue.use(Router);
 
+import { isInIcestark, getBasename } from "@ice/stark-app";
+
 export default new Router({
-  base: "/",
+  base: isInIcestark() ? getBasename() : "/",
   mode: "history",
   routes: [
     {

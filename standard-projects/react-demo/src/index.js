@@ -11,18 +11,22 @@ import {
   getMountNode,
   registerAppEnter,
   registerAppLeave,
+  getBasename,
 } from "@ice/stark-app";
 
 if (isInIcestark()) {
   registerAppEnter(() => {
-    ReactDOM.render(<Router>{renderRoutes(routes)}</Router>, getMountNode());
+    ReactDOM.render(
+      <Router basename={getBasename()}>{renderRoutes(routes)}</Router>,
+      getMountNode()
+    );
   });
   registerAppLeave(() => {
     ReactDOM.unmountComponentAtNode(getMountNode());
   });
 } else {
   ReactDOM.render(
-    <Router>{renderRoutes(routes)}</Router>,
+    <Router basename={"/"}>{renderRoutes(routes)}</Router>,
     document.getElementById("root")
   );
 }
