@@ -16,7 +16,7 @@ const asideMenuConfig = [
     icon: 'set',
     children: [
       {
-        path: '/react-app',
+        path: '/react-app/home',
         name: 'Home',
       },
       {
@@ -30,25 +30,11 @@ const asideMenuConfig = [
     icon: 'set',
     children: [
       {
-        path: '/vue-app',
+        path: '/vue-app/home',
         name: 'Home',
       },
       {
         path: '/vue-app/about',
-        name: 'About',
-      },
-    ],
-  },
-  {
-    name: 'SvelteApp',
-    icon: 'set',
-    children: [
-      {
-        path: '/svelte-app',
-        name: 'Home',
-      },
-      {
-        path: '/svelte-app/about',
         name: 'About',
       },
     ],

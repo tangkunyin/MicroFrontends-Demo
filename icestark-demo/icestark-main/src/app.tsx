@@ -35,16 +35,6 @@ const appConfig = {
           // ],
           entry: '//localhost:8080/',
         },
-        {
-          path: '/svelte-app',
-          title: 'SvelteApp',
-          // url: [
-          //   '//localhost:5000/build/bundle.js',
-          //   '//localhost:5000/global.css',
-          //   '//localhost:5000/build/bundle.css'
-          // ]
-          entry: '//localhost:5000/',
-        },
       ];
       return apps;
     },
