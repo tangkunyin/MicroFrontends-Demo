@@ -20,28 +20,30 @@ const appConfig = {
     getApps: async () => {
       const apps = [
         {
-          path: '/seller',
-          title: '商家平台',
-          // React app demo: https://github.com/ice-lab/icestark-child-apps/tree/master/child-seller-react-16
-          url: [
-            '//ice.alicdn.com/icestark/child-seller-react/index.js',
-            '//ice.alicdn.com/icestark/child-seller-react/index.css',
-          ],
+          path: '/react-app',
+          title: 'ReactApp',
+          // url: [
+          //   '//localhost:3000/static/js/bundle.js'
+          // ],
+          entry: '//localhost:3000/',
         },
         {
-          path: '/waiter',
-          title: '小二平台',
-          url: [
-            // Vue app demo: https://github.com/ice-lab/icestark-child-apps/tree/master/child-waiter-vue-2
-            '//ice.alicdn.com/icestark/child-waiter-vue/app.js',
-            '//ice.alicdn.com/icestark/child-waiter-vue/app.css',
-          ],
+          path: '/vue-app',
+          title: 'VueApp',
+          // url: [
+          //   '//localhost:8080/js/app.js'
+          // ],
+          entry: '//localhost:8080/',
         },
         {
-          path: '/angular',
-          title: 'Angular',
-          // Angular app demo: https://github.com/ice-lab/icestark-child-apps/tree/master/child-common-angular-9
-          entry: '//ice.alicdn.com/icestark/child-common-angular/index.html',
+          path: '/svelte-app',
+          title: 'SvelteApp',
+          // url: [
+          //   '//localhost:5000/build/bundle.js',
+          //   '//localhost:5000/global.css',
+          //   '//localhost:5000/build/bundle.css'
+          // ]
+          entry: '//localhost:5000/',
         },
       ];
       return apps;

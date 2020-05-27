@@ -7,7 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>React Sub App</p>
+        <div className="App-nav">
+          <a href="/home">Home</a> | <a href="/about">About</a>
+        </div>
       </header>
     </div>
   );

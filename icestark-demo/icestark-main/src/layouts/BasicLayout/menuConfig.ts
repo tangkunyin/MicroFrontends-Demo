@@ -12,60 +12,44 @@ const asideMenuConfig = [
     icon: 'chart-pie',
   },
   {
-    name: 'Angular',
+    name: 'ReactApp',
     icon: 'set',
     children: [
       {
-        path: '/angular',
-        name: 'router contact',
+        path: '/react-app',
+        name: 'Home',
       },
       {
-        path: '/angular/detail',
-        name: 'router detail',
-      },
-    ],
-  },
-  {
-    name: '商家平台',
-    icon: 'atm',
-    children: [
-      {
-        path: '/seller',
-        name: '商家首页',
-      },
-      {
-        path: '/seller/list',
-        name: '商家列表',
-      },
-      {
-        path: '/seller/detail',
-        name: '商家详情',
-      },
-      {
-        path: '/seller/404',
-        name: '商家 404',
+        path: '/react-app/about',
+        name: 'About',
       },
     ],
   },
   {
-    name: '小二平台',
-    icon: 'account',
+    name: 'VueApp',
+    icon: 'set',
     children: [
       {
-        path: '/waiter',
-        name: '小二首页',
+        path: '/vue-app',
+        name: 'Home',
       },
       {
-        path: '/waiter/list',
-        name: '小二列表',
+        path: '/vue-app/about',
+        name: 'About',
+      },
+    ],
+  },
+  {
+    name: 'SvelteApp',
+    icon: 'set',
+    children: [
+      {
+        path: '/svelte-app',
+        name: 'Home',
       },
       {
-        path: '/waiter/detail',
-        name: '小二详情',
-      },
-      {
-        path: '/waiter/404',
-        name: '小二 404',
+        path: '/svelte-app/about',
+        name: 'About',
       },
     ],
   },

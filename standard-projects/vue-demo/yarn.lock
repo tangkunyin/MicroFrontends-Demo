@@ -828,6 +828,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@ice/stark-app@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/@ice/stark-app/download/@ice/stark-app-1.2.0.tgz#e8672a7dacc07dee14826dc0b53663922e2b9fa6"
+  integrity sha1-6GcqfazAfe4Ugm3AtTZjki4rn6Y=
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -7858,6 +7863,11 @@ vue-loader@^15.9.1:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-router@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-3.2.0.tgz#da35195ffe37fdf0bec9f5f8f72781d2a7718815"
+  integrity sha1-2jUZX/43/fC+yfX49yeB0qdxiBU=
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
