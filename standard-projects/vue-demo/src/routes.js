@@ -7,23 +7,17 @@ import About from "./pages/About.vue";
 
 Vue.use(Router);
 
-import { isInIcestark, getBasename } from "@ice/stark-app";
-
-export default new Router({
-  base: isInIcestark() ? getBasename() : "/",
-  mode: "history",
-  routes: [
-    {
-      path: "/",
-      component: Index,
-    },
-    {
-      path: "/home",
-      component: Home,
-    },
-    {
-      path: "/about",
-      component: About,
-    },
-  ],
-});
+export default [
+  {
+    path: "/",
+    component: Index,
+  },
+  {
+    path: "/home",
+    component: Home,
+  },
+  {
+    path: "/about",
+    component: About,
+  },
+];
