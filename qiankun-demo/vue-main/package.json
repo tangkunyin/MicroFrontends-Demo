@@ -47,7 +47,10 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "@typescript-eslint/ban-ts-ignore": "off",
+      "@typescript-eslint/no-explicit-any": "off"
+    }
   },
   "browserslist": [
     "> 1%",

@@ -2,6 +2,11 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 
+type readerProps = {
+  appContent?: string;
+  loading: boolean;
+};
+
 Vue.config.productionTip = false;
 
 // 1. 引入qiankun微前端大法
@@ -14,14 +19,15 @@ import {
 
 // 2. 增加渲染函数(官方例子中有参考)
 let app: any = null;
-function render(appContent: any, loading?: boolean) {
+function render(props: readerProps) {
+  const { appContent, loading } = props;
   if (!app) {
     app = new Vue({
       el: "#subapp-container",
       data() {
         return {
           content: appContent,
-          loading,
+          loading: loading,
         };
       },
       render(h) {
@@ -41,7 +47,7 @@ function render(appContent: any, loading?: boolean) {
   }
 }
 
-// 3. 初始化并注册字应用
+// 3. 初始化并注册子应用
 render({ loading: true });
 const loader = (loading: boolean) => render({ loading });
 
