@@ -55,21 +55,21 @@ registerMicroApps(
   [
     {
       name: "react",
-      entry: "//localhost:3000",
+      entry: "//localhost:9001",
       container: "#subapp-viewport",
       loader,
       activeRule: "/react",
     },
     {
       name: "vue",
-      entry: "//localhost:8080",
+      entry: "//localhost:9002",
       container: "#subapp-viewport",
       loader,
       activeRule: "/vue",
     },
     {
       name: "svelte",
-      entry: "//localhost:5000",
+      entry: "//localhost:9003",
       container: "#subapp-viewport",
       loader,
       activeRule: "/svelte",

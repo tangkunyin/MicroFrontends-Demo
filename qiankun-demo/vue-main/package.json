@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start:all": "npm-run-all --parallel start:*",
+    "serve": "npm-run-all --parallel start:*",
     "start:main": "vue-cli-service serve",
     "start:react": "cd ../../standard-projects/react-demo/ && yarn start",
     "start:vue": "cd ../../standard-projects/vue-demo/ && yarn start",
