@@ -36,8 +36,5 @@
   },
   "devDependencies": {
     "@rescripts/cli": "^0.0.14"
-  },
-  "rescripts": [
-    "env"
-  ]
+  }
 }
