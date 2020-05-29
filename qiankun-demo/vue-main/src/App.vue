@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <!-- loading -->
-    <div v-if="loading" class="subapp-loading">app is loading...</div>
+    <div v-if="loading" class="subapp-loading">Loading subapp...</div>
     <!-- 子应用盒子 -->
-    <div id="subapp-viewport" v-html="content" />
+    <div id="subapp-viewport"></div>
+    <div v-html="content" />
   </div>
 </template>
 

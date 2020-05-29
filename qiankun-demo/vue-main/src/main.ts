@@ -48,31 +48,31 @@ function render(props: readerProps) {
 }
 
 // 3. 初始化并注册子应用
-render({ loading: true });
+// render({ appContent: "", loading: true });
 const loader = (loading: boolean) => render({ loading });
 
 registerMicroApps(
   [
     {
-      name: "react",
+      name: "react-demo",
       entry: "//localhost:9001",
-      container: "#subapp-viewport",
       loader,
-      activeRule: "/react",
+      container: "#subapp-viewport",
+      activeRule: "/r",
     },
     {
-      name: "vue",
+      name: "vue-demo",
       entry: "//localhost:9002",
-      container: "#subapp-viewport",
       loader,
-      activeRule: "/vue",
+      container: "#subapp-viewport",
+      activeRule: "/v",
     },
     {
-      name: "svelte",
+      name: "svelte-demo",
       entry: "//localhost:9003",
-      container: "#subapp-viewport",
       loader,
-      activeRule: "/svelte",
+      container: "#subapp-viewport",
+      activeRule: "/s",
     },
   ],
   {
@@ -102,7 +102,7 @@ registerMicroApps(
 );
 
 // 4. 启动默认子应用
-setDefaultMountApp("/react");
+setDefaultMountApp("/r");
 
 // 5. 启动主应用
 start();

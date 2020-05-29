@@ -12,7 +12,7 @@ function render() {
 
 // ======================= 整合qiankun微前端 start =====================
 export async function bootstrap() {
-  console.log("vue app bootstraped");
+  console.log("svelte app bootstraped");
 }
 
 export async function mount(props) {
